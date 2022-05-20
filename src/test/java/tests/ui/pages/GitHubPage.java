@@ -36,15 +36,9 @@ public class GitHubPage {
         return this;
     }
 
-    @Step("Click shop page")
-    public GitHubPage clickShopPage() {
-        $(byText("Shop")).click();
-        return this;
-    }
-
-    @Step("Click button shop")
-    public GitHubPage clickButtonShop() {
-        $(".butt .green").click();
+    @Step("Click button careers")
+    public GitHubPage clickCareersShop() {
+        $(byText("Careers")).scrollTo().click();
         return this;
     }
 
@@ -61,9 +55,9 @@ public class GitHubPage {
         return this;
     }
 
-    @Step("Check opened shop page")
-    public GitHubPage checkOpenedShopPage() {
-        $(".brand").shouldBe(visible);
+    @Step("Check opened careers page")
+    public GitHubPage checkOpenedCareersPage() {
+        $(byText("Come build the home for all developers")).shouldBe(visible);
         return this;
     }
 }

@@ -19,7 +19,7 @@ import static org.openqa.selenium.By.id;
 public class GitHubUITests extends TestBase {
 
     public final static String URL = "https://github.com";
-    private final static String REPOSITORY = "Suneks/demo_qa1";
+    private final static String REPOSITORY = "Suneks/breakingBadApp";
 
     GitHubPage gitHubPage = new GitHubPage();
 
@@ -48,6 +48,24 @@ public class GitHubUITests extends TestBase {
         gitHubPage.openPage(URL)
                 .clickTeamPage()
                 .checkOpenedTeamPage();
+    }
+
+    @Test
+    @DisplayName("Поиск раздела Issue в репозитории")
+    void searchIssueTabTest() {
+        gitHubPage.openPage(URL)
+                .search(REPOSITORY)
+                .goToRepository(REPOSITORY)
+                .checkOpenedIssue();
+    }
+
+    @Test
+    @DisplayName("Открытие страницы shop")
+    void openShopPage() {
+        gitHubPage.openPage(URL)
+            //    .clickShopPage()
+                .clickCareersShop()
+                .checkOpenedCareersPage();
     }
 }
 
