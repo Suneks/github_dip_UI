@@ -50,14 +50,14 @@ public class GitHubUITests extends TestBase {
                 .checkOpenedTeamPage();
     }
 
-    @Test
-    @DisplayName("Поиск раздела Issue в репозитории")
-    void searchIssueTabTest() {
-        gitHubPage.openPage(URL)
-                .search(REPOSITORY)
-                .goToRepository(REPOSITORY)
-                .checkOpenedIssue();
-    }
+//    @Test
+//    @DisplayName("Поиск раздела Issue в репозитории")
+//    void searchIssueTabTest() {
+//        gitHubPage.openPage(URL)
+//                .search(REPOSITORY)
+//                .goToRepository(REPOSITORY)
+//                .checkOpenedIssue();
+//    }
 
     @Test
     @DisplayName("Открытие страницы shop")
