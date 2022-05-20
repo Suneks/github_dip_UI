@@ -38,7 +38,7 @@ public class GitHubUITests extends TestBase {
         $(id("login_field")).setValue("test");
         $(id("password")).setValue("12345678");
         $("[value='Sign in']").click();
-        Selenide.sleep(100);
+//        Selenide.sleep(100);
         $(byText("There have been several failed attempts to sign in from this account or IP address. Please wait a while and try again later.")).shouldBe(Condition.visible);
     }
 
@@ -53,28 +53,41 @@ public class GitHubUITests extends TestBase {
     @Test
     @DisplayName("Заголовок страницы должен содержать текст заголовка")
     void titleTest() {
-        step("Open url 'https://github.com/'", () ->
-                open("https://github.com/"));
+//        step("Open url 'https://github.com/'", () ->
+//                open("https://github.com/"));
+        gitHubPage.openPage(URL);
+        String expectedTitle = "GitHub: Where the world builds software · GitHub";
+        String actualTitle = title();
 
-        step("Page title should have text 'GitHub: Where the world builds software · GitHub'", () -> {
-            String expectedTitle = "GitHub: Where the world builds software · GitHub";
-            String actualTitle = title();
+        assertThat(actualTitle).isEqualTo(expectedTitle);
 
-            assertThat(actualTitle).isEqualTo(expectedTitle);
-        });
+//        step("Page title should have text 'GitHub: Where the world builds software · GitHub'", () -> {
+//            String expectedTitle = "GitHub: Where the world builds software · GitHub";
+//            String actualTitle = title();
+//
+//            assertThat(actualTitle).isEqualTo(expectedTitle);
+
     }
 
     @Test
     @DisplayName("В консоли не должно быть ошибок")
     void consoleShouldNotHaveErrorsTest() {
-        step("Open url 'https://github.com/'", () ->
-                open("https://github.com/"));
+//        step("Open url 'https://github.com/'", () ->
+//
+//                open("https://github.com/"));
 
-        step("Console log should not contain text 'SEVERE'", () -> {
-            String consoleLogs = DriverUtils.getConsoleLogs();
-            String errorText = "SEVERE";
+        gitHubPage.openPage(URL);
+        String consoleLogs = DriverUtils.getConsoleLogs();
+        String errorText = "SEVERE";
 
-            assertThat(consoleLogs).doesNotContain(errorText);
-        });
+        assertThat(consoleLogs).doesNotContain(errorText);
+
+//        step("Console log should not contain text 'SEVERE'", () -> {
+//            String consoleLogs = DriverUtils.getConsoleLogs();
+//            String errorText = "SEVERE";
+//
+//            assertThat(consoleLogs).doesNotContain(errorText);
+//        });
     }
 }
+
