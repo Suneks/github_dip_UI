@@ -4,7 +4,6 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 
 import helpers.DriverUtils;
-import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import tests.TestBase;
@@ -24,32 +23,32 @@ public class GitHubUITests extends TestBase {
 
     GitHubPage gitHubPage = new GitHubPage();
 
-    @Test
-    @DisplayName("Поиск репозитория через поисковую строку")
-    void searchRepo() {
-        gitHubPage.openPage(BASE_URL)
-                  .search(REPOSITORY);
-    }
-
-    @Test
-    @DisplayName("Авторизация пользователя с неверным паролем")
-    void authorizationUserWithNotRightPassword() {
-        gitHubPage.openPage(BASE_URL);
-        $(byText("Sign in")).click();
-        $(id("login_field")).setValue("test");
-        $(id("password")).setValue("12345678");
-        $("[value='Sign in']").click();
-        Selenide.sleep(100);
-        $(byText("There have been several failed attempts to sign in from this account or IP address. Please wait a while and try again later.")).shouldBe(Condition.visible);
-    }
-
-    @Test
-    @DisplayName("Открытие вкладки team")
-    void openTabFeature() {
-        gitHubPage.openPage(BASE_URL)
-                .clickTeamPage()
-                .checkOpenedTeamPage();
-    }
+//    @Test
+//    @DisplayName("Поиск репозитория через поисковую строку")
+//    void searchRepo() {
+//        gitHubPage.openPage(BASE_URL)
+//                  .search(REPOSITORY);
+//    }
+//
+//    @Test
+//    @DisplayName("Авторизация пользователя с неверным паролем")
+//    void authorizationUserWithNotRightPassword() {
+//        gitHubPage.openPage(BASE_URL);
+//        $(byText("Sign in")).click();
+//        $(id("login_field")).setValue("test");
+//        $(id("password")).setValue("12345678");
+//        $("[value='Sign in']").click();
+//        Selenide.sleep(100);
+//        $(byText("There have been several failed attempts to sign in from this account or IP address. Please wait a while and try again later.")).shouldBe(Condition.visible);
+//    }
+//
+//    @Test
+//    @DisplayName("Открытие вкладки team")
+//    void openTabFeature() {
+//        gitHubPage.openPage(BASE_URL)
+//                .clickTeamPage()
+//                .checkOpenedTeamPage();
+//    }
 
     @Test
     @DisplayName("Заголовок страницы должен содержать текст заголовка")
