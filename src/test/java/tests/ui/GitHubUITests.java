@@ -26,12 +26,12 @@ public class GitHubUITests extends TestBase {
     @Test
     @DisplayName("Поиск репозитория через поисковую строку")
     void searchRepo() {
-//        gitHubPage.openPage(URL)
-//                  .search(REPOSITORY);
+        gitHubPage.openPage(URL)
+                  .search(REPOSITORY);
 
-        open(URL);
-        $(".header-search-input").click();
-        $(".header-search-input").val(REPOSITORY).pressEnter();
+//        open(URL);
+//        $(".header-search-input").click();
+//        $(".header-search-input").val(REPOSITORY).pressEnter();
     }
 //
 //    @Test
