@@ -59,54 +59,14 @@ public class GitHubUITests extends TestBase {
                 .checkOpenedIssue();
     }
 
-//    @Test
-//    @DisplayName("Открытие страницы shop")
-//    void openShopPage() {
-//        gitHubPage.openPage(URL)
-//            //    .clickShopPage()
-//                .clickCareersShop()
-//                .checkOpenedCareersPage();
-//    }
+    @Test
+    @DisplayName("Открытие страницы shop")
+    void openShopPage() {
+        gitHubPage.openPage(URL)
+            //    .clickShopPage()
+                .clickCareersShop()
+                .checkOpenedCareersPage();
+    }
 }
 
-//    @Test
-//    @DisplayName("Заголовок страницы должен содержать текст заголовка")
-//    void titleTest() {
-//        step("Open url 'https://github.com/'", () ->
-//                open("https://github.com/"));
-//        gitHubPage.openPage(URL);
-//        String expectedTitle = "GitHub: Where the world builds software · GitHub";
-//        String actualTitle = title();
-//
-//        assertThat(actualTitle).isEqualTo(expectedTitle);
-//
-//        step("Page title should have text 'GitHub: Where the world builds software · GitHub'", () -> {
-//            String expectedTitle = "GitHub: Where the world builds software · GitHub";
-//            String actualTitle = title();
-//
-//            assertThat(actualTitle).isEqualTo(expectedTitle);
-//
-//    }
-//
-//    @Test
-//    @DisplayName("В консоли не должно быть ошибок")
-//    void consoleShouldNotHaveErrorsTest() {
-//        step("Open url 'https://github.com/'", () ->
-//
-//                open("https://github.com/"));
-//
-//        gitHubPage.openPage(URL);
-//        String consoleLogs = DriverUtils.getConsoleLogs();
-//        String errorText = "SEVERE";
-//
-//        assertThat(consoleLogs).doesNotContain(errorText);
-//
-//        step("Console log should not contain text 'SEVERE'", () -> {
-//            String consoleLogs = DriverUtils.getConsoleLogs();
-//            String errorText = "SEVERE";
-//
-//            assertThat(consoleLogs).doesNotContain(errorText);
-//        });
-//    }
-//}
 
