@@ -28,31 +28,27 @@ public class GitHubUITests extends TestBase {
     void searchRepo() {
         gitHubPage.openPage(URL)
                   .search(REPOSITORY);
-
-//        open(URL);
-//        $(".header-search-input").click();
-//        $(".header-search-input").val(REPOSITORY).pressEnter();
     }
-//
-//    @Test
-//    @DisplayName("Авторизация пользователя с неверным паролем")
-//    void authorizationUserWithNotRightPassword() {
-//        gitHubPage.openPage(BASE_URL);
-//        $(byText("Sign in")).click();
-//        $(id("login_field")).setValue("test");
-//        $(id("password")).setValue("12345678");
-//        $("[value='Sign in']").click();
-//        Selenide.sleep(100);
-//        $(byText("There have been several failed attempts to sign in from this account or IP address. Please wait a while and try again later.")).shouldBe(Condition.visible);
-//    }
-//
-//    @Test
-//    @DisplayName("Открытие вкладки team")
-//    void openTabFeature() {
-//        gitHubPage.openPage(BASE_URL)
-//                .clickTeamPage()
-//                .checkOpenedTeamPage();
-//    }
+
+    @Test
+    @DisplayName("Авторизация пользователя с неверным паролем")
+    void authorizationUserWithNotRightPassword() {
+        gitHubPage.openPage(URL);
+        $(byText("Sign in")).click();
+        $(id("login_field")).setValue("test");
+        $(id("password")).setValue("12345678");
+        $("[value='Sign in']").click();
+        Selenide.sleep(100);
+        $(byText("There have been several failed attempts to sign in from this account or IP address. Please wait a while and try again later.")).shouldBe(Condition.visible);
+    }
+
+    @Test
+    @DisplayName("Открытие вкладки team")
+    void openTabFeature() {
+        gitHubPage.openPage(URL)
+                .clickTeamPage()
+                .checkOpenedTeamPage();
+    }
 
     @Test
     @DisplayName("Заголовок страницы должен содержать текст заголовка")
