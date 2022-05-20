@@ -18,17 +18,21 @@ import static org.openqa.selenium.By.id;
 
 public class GitHubUITests extends TestBase {
 
-    public final static String BASE_URL = "https://github.com";
+    public final static String URL = "https://github.com";
     private final static String REPOSITORY = "Suneks/demo_qa1";
 
     GitHubPage gitHubPage = new GitHubPage();
 
-//    @Test
-//    @DisplayName("Поиск репозитория через поисковую строку")
-//    void searchRepo() {
-//        gitHubPage.openPage(BASE_URL)
+    @Test
+    @DisplayName("Поиск репозитория через поисковую строку")
+    void searchRepo() {
+//        gitHubPage.openPage(URL)
 //                  .search(REPOSITORY);
-//    }
+
+        open(URL);
+        $(".header-search-input").click();
+        $(".header-search-input").val(REPOSITORY).pressEnter();
+    }
 //
 //    @Test
 //    @DisplayName("Авторизация пользователя с неверным паролем")
