@@ -30,7 +30,7 @@ Telegram (reports), Jira
         State6: Jenkins
         State7: Selenoid & Docker
         State8: Allure Report & Allure TestOps
-        State9: Telegram
+        State9: Telegram report
         State10: Конец
         State1 --> State2
         State2 --> State3
