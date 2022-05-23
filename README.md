@@ -51,6 +51,9 @@ test
 Статистика по запускам
 https://jenkins.autotests.cloud/job/011-Alex-11-13-Github/
 ![Jenkins](src/test/resources/files/Jenkins_1.png)
+### Запуск с параметрами
+https://jenkins.autotests.cloud/job/011-Alex-11-13-Github/
+![Jenkins](src/test/resources/files/Jenkins_2.png)
 
 <a name="аллюр"></a>
 ### Отчёт в Allure Report
