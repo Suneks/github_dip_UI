@@ -20,7 +20,7 @@
 IntelliJ IDEA, Java, Selenide, Selenoid, Gradle, JUnit5, Allure Report, Allure TestOps, Github, Jenkins, Rest-Assured,
 Telegram (reports), Jira
 
-Selenoid![Selenoid](src/test/resources/files/icons/Selenoid.png)![Gradle](src/test/resources/files/icons/Gradle.png) запускает браузеры в контейнерах Docker.
+Selenoid![Selenoid](src/test/resources/files/icons/Selenoid.png) запускает браузеры в контейнерах Docker.
 
 Allure Report![Allure Report](src/test/resources/files/icons/Allure_Report.png) генерирует отчет о тестовом запуске.
 
@@ -30,7 +30,7 @@ JUnit 5![JUnit5](src/test/resources/files/icons/JUnit5.png).
 
 Jenkins![Jenkins](src/test/resources/files/icons/Jenkins.png) CI/CD система.
 
-После завершения запуска уведомления отправляются с помощью бота в Telegram.
+После завершения запуска тестов, уведомления отправляются с помощью бота в Telegram.
 
 <a name="описание"></a>
 ## Реализованы проверки:
