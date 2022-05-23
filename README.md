@@ -22,13 +22,11 @@ Telegram (reports), Jira.
 
 <a name="описание"></a>
 ## Реализованы проверки:
-- [X] - Создание репозитория
-- [X] - Изменение названия репозитория
-- [X] - Удаление репозитория
-- [X] - Поиск репозитория до и после создания
-- [X] - Создание Issue
-- [X] - Редактирование Issue
-- [X] - Блокировка Issue
+- [X] - Авторизация пользователя с неверным паролем
+- [X] - Поиск репозитория через поисковую строку
+- [X] - Поиск раздела Issue в репозитории
+- [X] - Открытие вкладки team
+- [X] - Открытие страницы shop
 
 <a name="запуск_тестов"></a>
 ### Команда для запуска из терминала
@@ -44,7 +42,7 @@ test
 -DbrowserVersion=${BROWSER_VERSION}
 -DbrowserSize=${BROWSER_SIZE}
 -DbrowserMobileView="${BROWSER_MOBILE}"
--DremoteDriverUrl=https://user1:1234@${REMOTE_DRIVER_URL}/wd/hub/
+-DremoteUrl=https://${USER}:${PASSWORD}@selenoid.autotests.cloud/wd/hub/
 -DvideoStorage=https://${REMOTE_DRIVER_URL}/video/
 -Dthreads=${THREADS}
 ```
