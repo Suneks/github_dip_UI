@@ -1,9 +1,6 @@
 package tests.ui;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
-
-import helpers.DriverUtils;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import tests.TestBase;
@@ -11,9 +8,6 @@ import tests.ui.pages.GitHubPage;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.Selenide.open;
-import static io.qameta.allure.Allure.step;
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.openqa.selenium.By.id;
 
 public class GitHubUITests extends TestBase {
@@ -63,7 +57,6 @@ public class GitHubUITests extends TestBase {
     @DisplayName("Открытие страницы shop")
     void openShopPage() {
         gitHubPage.openPage(URL)
-            //    .clickShopPage()
                 .clickCareersShop()
                 .checkOpenedCareersPage();
     }
