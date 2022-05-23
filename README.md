@@ -15,20 +15,10 @@
 <a name="технологии"></a>
 Технологии и инструменты
 
-![Intelij_IDEA](src/test/resources/files/icons/Intelij_IDEA.png)![Java](src/test/resources/files/icons/Java.png)![Selenide](src/test/resources/files/icons/Selenide.png)![Selenoid](src/test/resources/files/icons/Selenoid.png)![Gradle](src/test/resources/files/icons/Gradle.png)![JUnit5](src/test/resources/files/icons/JUnit5.png)![Allure Report](src/test/resources/files/icons/Allure_Report.png)![AllureTestOps](src/test/resources/files/icons/AllureTestOps.png)![Github](src/test/resources/files/icons/Github.png)![Jenkins](src/test/resources/files/icons/Jenkins.png)![Rest-Assured](src/test/resources/files/icons/Rest-Assured.png)![Telegram](src/test/resources/files/icons/Telegram.png)![Jira](src/test/resources/files/icons/Jira.png)
+![Intelij_IDEA](src/test/resources/files/icons/Intelij_IDEA.png)![Java](src/test/resources/files/icons/Java.png)![Selenide](src/test/resources/files/icons/Selenide.png)![Selenoid](src/test/resources/files/icons/Selenoid.png)![Gradle](src/test/resources/files/icons/Gradle.png)![JUnit5](src/test/resources/files/icons/JUnit5.png)![Allure Report](src/test/resources/files/icons/Allure_Report.png)![AllureTestOps](src/test/resources/files/icons/AllureTestOps.png)![Github](src/test/resources/files/icons/Github.png)![Jenkins](src/test/resources/files/icons/Jenkins.png)![Telegram](src/test/resources/files/icons/Telegram.png)![Jira](src/test/resources/files/icons/Jira.png)
 
 IntelliJ IDEA, Java, Selenide, Selenoid, Gradle, JUnit5, Allure Report, Allure TestOps, Github, Jenkins, Rest-Assured,
 Telegram (reports), Jira
-
-Selenoid![Selenoid](src/test/resources/files/icons/Selenoid.png) запускает браузеры в контейнерах Docker.
-
-Allure Report![Allure Report](src/test/resources/files/icons/Allure_Report.png) генерирует отчет о тестовом запуске.
-
-Gradle![Gradle](src/test/resources/files/icons/Gradle.png) используется для автоматической сборки проекта.
-
-JUnit 5![JUnit5](src/test/resources/files/icons/JUnit5.png).
-
-Jenkins![Jenkins](src/test/resources/files/icons/Jenkins.png) CI/CD система.
 
 После завершения запуска тестов, уведомления отправляются с помощью бота в Telegram.
 
