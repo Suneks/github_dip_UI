@@ -26,7 +26,7 @@ Telegram (reports), Jira.
 - [X] - Поиск репозитория через поисковую строку
 - [X] - Поиск раздела Issue в репозитории
 - [X] - Открытие вкладки team
-- [X] - Открытие страницы shop
+- [X] - Открытие страницы careers
 
 <a name="запуск_тестов"></a>
 ### Команда для запуска из терминала
@@ -42,7 +42,7 @@ test
 -DbrowserVersion=${BROWSER_VERSION}
 -DbrowserSize=${BROWSER_SIZE}
 -DbrowserMobileView="${BROWSER_MOBILE}"
--DremoteUrl=https://${USER}:${PASSWORD}@selenoid.autotests.cloud/wd/hub/
+-DremoteDriverUrl=https://${USER}:${PASSWORD}@${REMOTE_DRIVER_URL}/wd/hub/
 -DvideoStorage=https://${REMOTE_DRIVER_URL}/video/
 -Dthreads=${THREADS}
 ```
