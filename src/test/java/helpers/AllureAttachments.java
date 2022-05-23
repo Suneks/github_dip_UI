@@ -54,6 +54,4 @@ public class AllureAttachments {
             Allure.addAttachment("Video", "video/mp4", videoInputStream, "mp4");
         }
     }
-
-
 }
