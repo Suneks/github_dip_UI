@@ -37,7 +37,7 @@ public class GitHubPage {
     }
 
     @Step("Click button careers")
-    public GitHubPage clickCareersShop() {
+    public GitHubPage clickCareers() {
         $(byText("Careers")).scrollTo().click();
         return this;
     }

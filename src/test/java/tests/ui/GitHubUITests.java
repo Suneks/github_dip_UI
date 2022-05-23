@@ -54,10 +54,10 @@ public class GitHubUITests extends TestBase {
     }
 
     @Test
-    @DisplayName("Открытие страницы shop")
+    @DisplayName("Открытие страницы Careers")
     void openShopPage() {
         gitHubPage.openPage(URL)
-                .clickCareersShop()
+                .clickCareers()
                 .checkOpenedCareersPage();
     }
 }
