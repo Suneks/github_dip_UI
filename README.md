@@ -9,7 +9,8 @@
 5. [Отчёт в Allure Report](#аллюр)
 6. [Главный экран отчета Allure TestOps](#аллюр_тестопс)
 7. [Интерграция с Jira](#джира)
-8. [Уведомления в Telegram](#телеграм)
+8. [Видео о прохождении теста](#видео)
+9. [Уведомления в Telegram](#телеграм)
 
 <a name="технологии"></a>
 Технологии и инструменты
@@ -65,6 +66,10 @@ https://jenkins.autotests.cloud/job/011-Alex-11-13-Github/
 ### Интерграция с Jira
 Отображение тест-кейсов и ланча
 ![Jira](src/test/resources/files/Jira.png)
+
+<a name="видео"></a>
+### Видео о прохождении теста
+![Selenoid](src/test/resources/files/d56ff34535b99ef8.gif)
 
 <a name="телеграм"></a>
 ### Уведомления в Telegram
