@@ -61,6 +61,9 @@ https://jenkins.autotests.cloud/job/011-Alex-11-13-Github/
 
 <a name="аллюр_тестопс"></a>
 ### Главный экран отчета Allure TestOps
+Отображение кейсов и ланчей
+![Allure](src/test/resources/files/AllureTestOps_1.png)
+![Allure](src/test/resources/files/AllureTestOps_2.png)
 ![Allure](src/test/resources/files/AllureTestOps_3.png)
 
 <a name="джирас"></a>
