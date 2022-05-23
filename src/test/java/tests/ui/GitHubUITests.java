@@ -32,7 +32,6 @@ public class GitHubUITests extends TestBase {
         $(id("login_field")).setValue("test");
         $(id("password")).setValue("12345678");
         $("[value='Sign in']").click();
-//        Selenide.sleep(100);
         $(byText("There have been several failed attempts to sign in from this account or IP address. Please wait a while and try again later.")).shouldBe(Condition.visible);
     }
 
