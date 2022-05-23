@@ -21,7 +21,7 @@ IntelliJ IDEA, Java, Selenide, Selenoid, Gradle, JUnit5, Allure Report, Allure T
 Telegram (reports), Jira
 
 ```mermaid        
-    stateDiagram-v2
+    stateDiagram-v1
         State1: START
         State2: Java & IntelliJ IDEA
         State3: Selenide & JUnit5
